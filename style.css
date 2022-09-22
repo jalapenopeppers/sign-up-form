@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=VT323&display=swap');
+
+:root {
+  --font-increase-offset: 2;
+}
+
+html {
+  font-size: calc(100vw * 24px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: 'VT323', monospace;
+}
+
+body {
+  display: flex;
+}
+
+img { 
+  height: 100vh;
+}
+
+.picture-container {
+  height: 100vh;
+  min-width: 40%;
+  background-image: url("safar-safarov-koOdUvfGr4c-unsplash.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-bar,
+.picture-credits {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  text-align: center;
+}
+
+.logo-bar {
+  margin-top: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 4rem;
+}
+
+.picture-credits {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form-container {
+  padding: 0px 40px;
+  color: white;
+  background-color: rgb(32, 42, 46);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  /* justify-content: space-between; */
+}
+
+.disclaimer {
+  padding: 5% 0;
+}
+
+.form-description {
+  padding: 15% 0;
+}
+
