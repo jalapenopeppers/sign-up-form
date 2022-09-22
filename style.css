@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=VT323&display=swap');
 
-:root {
-  --font-increase-offset: 2;
-}
-
 html {
-  font-size: calc(100vw * 24px);
+  font-size: calc(100vw / 55);
 }
 
 * {
   margin: 0;
   padding: 0;
-  /* font-family: 'IBM Plex Mono', monospace; */
   font-family: 'VT323', monospace;
 }
 
@@ -19,19 +14,17 @@ body {
   display: flex;
 }
 
-img { 
-  height: 100vh;
-}
-
 .picture-container {
   height: 100vh;
-  min-width: 40%;
+  /* min-width: 40%;
+  max-width: 60%; */
+  width: 40vw;
   background-image: url("safar-safarov-koOdUvfGr4c-unsplash.jpg");
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   justify-content: space-between;
 }
@@ -53,6 +46,7 @@ img {
 .picture-credits {
   padding-top: 6px;
   padding-bottom: 6px;
+  font-size: 12px;
 }
 
 .form-container {
@@ -60,16 +54,93 @@ img {
   color: white;
   background-color: rgb(32, 42, 46);
   display: flex;
+  flex: 1;
   flex-direction: column;
   font-size: 1.2rem;
-  /* justify-content: space-between; */
 }
 
 .disclaimer {
   padding: 5% 0;
+  font-size: 16px;
 }
 
 .form-description {
-  padding: 15% 0;
+  padding: 0.9rem 0;
+  font-size: 1rem
 }
 
+form {
+  width: 80%;
+  min-width: 300px;
+  padding: 10px;
+  border: 1px solid rgb(217, 224, 255);
+  border-radius: 10px;
+  font-size: min(1rem, 24px);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-line > div {
+  width: 45%;
+}
+
+input,
+select,
+button {
+  width: 95%;
+  height: max(1rem, 24px);
+  padding-left: 5px;
+  font-size: min(1rem, 24px);
+  border: 2px solid rgb(45, 45, 45);
+  border-radius: 7px;
+  background-color: rgb(227, 248, 255);
+}
+
+.checkbox {
+  width: auto;
+  align-self: center;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  vertical-align: middle;
+}
+
+.create-account-btn {
+  width: 40%;
+  margin: 1rem 0px;
+  color: white;
+  background-color: rgba(0, 122, 198, 0.845);
+  border: 1px solid white;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.create-account-btn:hover {
+  scale: 1.1;
+}
+
+.login-prompt {
+  margin-top: 4vh;
+  font-size: min(1rem, 20px);
+}
+
+a {
+  color:rgb(155, 144, 255);
+}
+
+input:required{
+  border: 2px solid rgb(0, 0, 0);
+}
+
+input:not(input[type="checkbox"]):focus,
+select:focus {
+  box-shadow: 3px 3px white;
+}
